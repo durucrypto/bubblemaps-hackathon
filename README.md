@@ -2,16 +2,16 @@
 
 This Telegram bot allows users to input the **contract address** of any token supported by [Bubblemaps](https://www.bubblemaps.io) and provides the following in a structured, easy-to-read format:
 
-1. **Bubble Map Screenshot**
+1. **Bubble Map Screenshot:**
    Generates and returns a screenshot of the token's bubble map, providing a visual representation of the supply distribution.
 
-2. **Token Information**
+2. **Token Information:**
    Gives relevant information for the token such as market cap, price, volume.
 
-3. **Decentralization Metrics**
+3. **Decentralization Metrics:**
    Displays metrics like the decentralization score and the percentage of supply held by centralized exchanges (CEXs).
 
-4. **Additional Insights**
+4. **Additional Insights:**
    Provides additional insights including the distribution of top wallets, supply clusters, and social links.
 
 ## Additional Features
