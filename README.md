@@ -39,17 +39,39 @@ This Telegram bot allows users to input the **contract address** of any token su
 ## ⚙️ Setup Instructions
 
 1. Clone the repository:
-   git clone https://github.com/your-repo/bubblemaps-bot.git
-   cd bubblemaps-bot
 
-2. Install dependencies:
-   npm install
+    ```bash
+    git clone https://github.com/durucrypto/bubblemaps-hackathon.git
+    ```
 
-3. Create your .env file:
-   cp sample.env .env
-   # Then open .env and add your config values
+2. Change the directory:
 
-4. Start the bot:
-   npm start
-   # or, if you prefer:
-   node bubblemapsBot.js
+    ```bash
+    cd bubblemaps-hackathon
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+4. Create your `.env` file:
+
+    ```bash
+    cp sample.env .env
+    ```
+
+    Then open `.env` and add your config values.
+
+5. Start the bot:
+
+    ```bash
+    npm start
+    ```
+
+    Or, if you prefer:
+
+    ```bash
+    node bubblemapsBot.js
+    ```
