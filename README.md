@@ -1,6 +1,6 @@
 # 🗺️ Bubblemaps Telegram Bot
 
-A Telegram bot that allows users to input any token supported by [Bubblemaps](https://www.bubblemaps.io) and provides the following in a structured, easy-to-read format:
+A Telegram bot that allows users to input any token supported by [Bubblemaps](https://www.bubblemaps.io) and offers the following features.
 
 ## ✅ Features
 
