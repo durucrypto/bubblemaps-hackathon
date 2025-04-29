@@ -21,7 +21,7 @@ This Telegram bot allows users to input the **contract address** of any token su
 - Rate limiting is implemented to restrict the number of requests a user can make within a specified time window.
 
 ## How-To-Use Guide:
-- Send a private message to the bot on Telegram by clicking [here](https://t.me/bot_username).
+- Send a private message to the bot on Telegram by clicking [here](https://t.me/Bubblemaps_Hackathon_Bot).
 - Post the token you want to get information for. This can be in one of the following formats:
    - Bubblemaps link
    - Dexscreener link
