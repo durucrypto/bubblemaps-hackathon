@@ -8,7 +8,7 @@ A Telegram bot that allows users to query any token supported by [Bubblemaps](ht
    Generates and returns a screenshot of the token's bubble map, providing a visual representation of the supply distribution.
 
 2. **Token Information:**
-   Gives relevant information about the token, such as market cap, price, and volume.
+   Gives relevant information about the token, such as market cap, price and volume.
 
 3. **Decentralization Metrics:**
    Displays metrics like the token's decentralization score and the percentage of supply held by centralized exchanges (CEXs).
