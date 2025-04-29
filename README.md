@@ -21,7 +21,7 @@ A Telegram bot that allows users to input any token supported by [Bubblemaps](ht
 - The bot greets users with a welcome message and provides a link to the how-to-use guide (see below).
 - Some UI elements are removed for a cleaner bubble map screenshot, while keeping the Bubblemaps logo on it.
 - Rate limiting is implemented to restrict the number of requests a user can make within a specified time window.
-- Support for a wide range of input formats, not just the token’s contract address for better UX.
+- Support for a wide range of input formats, not just the token’s contract address.
 - A refresh button for easy access that also triggers a DM to the bot, even if the user hasn’t interacted with it before.
 
 ## 📘 How-To-Use Guide
