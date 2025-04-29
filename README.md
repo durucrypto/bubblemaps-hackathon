@@ -21,20 +21,23 @@ A Telegram bot that allows users to input any token supported by [Bubblemaps](ht
 - The bot greets users with a welcome message and provides a link to the how-to-use guide (see below).
 - Some UI elements are removed for a cleaner bubble map screenshot, while keeping the Bubblemaps logo on it.
 - Rate limiting is implemented to restrict the number of requests a user can make within a specified time window.
+- Support for a wide range of input formats, not just the token’s contract address for better UX.
+- A refresh button for easy access that also triggers a DM to the bot, even if the user hasn’t interacted with it before.
 
 ## 📘 How-To-Use Guide
 
 - Send a private message to the bot on Telegram by clicking [here](https://t.me/Bubblemaps_Hackathon_Bot).
 - Post the token you want to get information for. This can be in one of the following formats:
-  - Bubblemaps link  
+  - Bubblemaps link
   - Dexscreener link  
-  - Contract address of the token or the pool  
-  - Name of the token  
+  - Contract address of the token or the pool
+  - Name of the token
+
 - The bot will gather data for the requested token and respond within a few seconds.
 
 ## 🛠️ APIs Utilized
 
-- **Bubblemaps API**: To check if the bubble map is available and fetch the token's bubble map, map data, and metadata.
+- **Bubblemaps API**: To check if the bubble map and its metadata are available and fetch the token's bubble map, map data, and metadata.
 - **Dexscreener API**: To retrieve key token information such as market data and DEX-related insights.
 - **Coingecko API**: To obtain the token's Coingecko ID along with links and social profiles.
 
