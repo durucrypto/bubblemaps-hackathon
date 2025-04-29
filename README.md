@@ -37,7 +37,7 @@ A Telegram bot that allows users to input any token supported by [Bubblemaps](ht
 
 ## 🛠️ APIs Utilized
 
-- **Bubblemaps API**: To check if the bubble map and its metadata are available and fetch the token's bubble map, map data, and metadata.
+- **Bubblemaps API**: To check if the bubble map and its metadata are available and fetch the token's bubble map, map data and metadata.
 - **Dexscreener API**: To retrieve key token details, such as market data and DEX-related insights.
 - **Coingecko API**: To obtain the token's Coingecko ID along with links and social profiles.
 
