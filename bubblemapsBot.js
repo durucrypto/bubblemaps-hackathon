@@ -13,7 +13,8 @@ const { Telegraf } = require("telegraf");
 const telegramBot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 const telegramBotUsername = process.env.TELEGRAM_BOT_USERNAME;
 
-const welcomeMsg = "Welcome to the Bubblemaps Bot! You can use the /guide command to view the instructions on how to use the bot."; // default welcome message for the bot
+const welcomeMsg = "Welcome to the Bubblemaps Bot! You can use the /help command to view the instructions on how to use the bot."; // default welcome message for the bot
+const guideUrl = "https://github.com/durucrypto/bubblemaps-hackathon?tab=readme-ov-file#-how-to-use-guide";
 
 const userRequests = new Map(); // map to track user requests for rate-limiting
 const maxRequestLimit = 5; // maximum number of allowed requests per user within a time window
@@ -819,6 +820,12 @@ async function main() {
 
                 if (!isUserRateLimited(ctx.from.id)) {
                     const userMsg = ctx.message.text.trim().replace(/\s+/g, " ");
+
+                    if (userMsg.toLowerCase() === "/help" || userMsg.toLowerCase() === "/guide") {
+                        ctx.reply("📘 Here's the how-to-use guide:" + guideUrl);
+                        return;
+                    }
+
                     const [chainId, tokenAddress] = await parseUserMsg(userMsg) || [];
 
                     const botResponse = await ctx.reply("⏳ Fetching token details...");
