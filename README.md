@@ -31,7 +31,7 @@ A Telegram bot that allows users to query any token supported by [Bubblemaps](ht
   - Bubblemaps link
   - Dexscreener link  
   - Contract address of the token or the pool
-  - Name of the token
+  - Token's ticker or name
 
 - The bot will gather data for the requested token and respond within a few seconds.
 
