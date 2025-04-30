@@ -830,7 +830,7 @@ async function main() {
                     const userMsg = ctx.message.text.trim().replace(/\s+/g, " ");
 
                     if (userMsg.toLowerCase() === "/help" || userMsg.toLowerCase() === "/guide") {
-                        ctx.reply(`📘 To view the how-to-use guide, [click here](${guideUrl}).`, { parse_mode: "Markdown" });
+                        ctx.reply(`📘 To view the how-to-use guide, [click here](${guideUrl}).`, { parse_mode: "Markdown", disable_web_page_preview: true });
                         return;
                     }
 
