@@ -714,7 +714,7 @@ async function parseUserMsg(msg) {
 
             if (urlPathParts.length === 3 && getBmChainId(urlPathParts[0])) {
                 chainId = getBmChainId(urlPathParts[0]);
-                const regex = chainId !== "sol" ? /^0x[1-9A-Za-z]{40}$/ : /^[1-9A-HJ-NP-Za-km-z]{44}$/;
+                const regex = chainId !== "sol" ? /^0x[a-fA-F0-9]{40}$/ : /^[1-9A-HJ-NP-Za-km-z]{44}$/;
 
                 if (validateAddress(urlPathParts[2], regex)) {
                     tokenAddress = urlPathParts[2];
@@ -726,7 +726,7 @@ async function parseUserMsg(msg) {
 
             if (urlPathParts.length === 2 && getBmChainId(urlPathParts[0])) {
                 chainId = getBmChainId(urlPathParts[0]);
-                const regex = chainId !== "sol" ? /^0x[1-9A-Za-z]{40}$/ : /^[1-9A-HJ-NP-Za-km-z]{44}$/;
+                const regex = chainId !== "sol" ? /^0x[a-fA-F0-9]{40}$/ : /^[1-9A-HJ-NP-Za-km-z]{44}$/;
 
                 if (validateAddress(urlPathParts[1], regex)) {
                     const dsResponse = await axios.get(`https://api.dexscreener.com/latest/dex/search?q=${urlPathParts[1]}`);
