@@ -28,10 +28,10 @@ A Telegram bot that allows users to query any token supported by [Bubblemaps](ht
 
 - Send a private message to the bot on Telegram by clicking [here](https://t.me/Bubblemaps_Hackathon_Bot).
 - Post the token you want to get information for. This can be in one of the following formats:
-  - Bubblemaps link
-  - Dexscreener link  
-  - Contract address of the token or the pool
-  - Token's ticker or name
+  - Bubblemaps URL
+  - Dexscreener URL  
+  - Token or pool contract address
+  - Token ticker or name
 
 - The bot will gather data for the requested token and respond within a few seconds.
 
