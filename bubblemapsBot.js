@@ -777,6 +777,7 @@ function isUserRateLimited(userId) {
 async function main() {
     try {
         telegramBot.launch(); // start polling
+        console.log("Launched the bot.");
 
         // handle /start command
         telegramBot.start(async (ctx) => {
