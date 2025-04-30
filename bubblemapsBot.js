@@ -13,7 +13,7 @@ const { Telegraf } = require("telegraf");
 const telegramBot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
 const telegramBotUsername = process.env.TELEGRAM_BOT_USERNAME;
 
-const welcomeMsg = "Welcome to the Bubblemaps Bot!"; // default welcome message for the bot
+const welcomeMsg = "Welcome to the Bubblemaps Bot! You can use the /guide command to view the instructions on how to use the bot."; // default welcome message for the bot
 
 const userRequests = new Map(); // map to track user requests for rate-limiting
 const maxRequestLimit = 5; // maximum number of allowed requests per user within a time window
