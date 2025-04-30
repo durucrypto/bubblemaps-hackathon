@@ -35,6 +35,8 @@ const elementsToHide = [
     "#app > div > div > div.graph-view > div:nth-child(6) > div.buttons-row__right-side",
 ];
 
+const screenshotsDir = path.join(__dirname, "screenshots");
+
 /******************************************************************************************/
 
 // format large numbers into a readable string with units
@@ -570,7 +572,13 @@ async function captureBubblemap(chainId, tokenAddress) {
 
         // capture screenshot of the page
         const now = Date.now();
-        const screenshotPath = path.join(__dirname, "screenshots", `screenshot_${chainId}_${tokenAddress}_${now}.png`);
+
+        // check if the folder exists, and create it if not
+        if (!fs.existsSync(screenshotsDir)) {
+            fs.mkdirSync(screenshotsDir, { recursive: true });
+        }
+
+        const screenshotPath = path.join(screenshotsDir, `screenshot_${chainId}_${tokenAddress}_${now}.png`);
 
         await page.screenshot({
             path: screenshotPath,
